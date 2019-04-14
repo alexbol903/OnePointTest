@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>OnePoint Test Slider</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+      <!-- VERTICAL NAVIGATION -->
+			<nav class="pagination">
+				<ul class="pagination__list">
+					<li class="pagination__icon pagination__icon--active"></li>
+					<li class="pagination__icon"></li>
+					<li class="pagination__icon"></li>
+				</ul>
+			</nav>
+			<!-- VERTICAL SLEDER -->
+			<div class="slide__vertical">
+				<footer class="next">
+					<p class="next__text">Листайте вниз</p>
+					<span class="next__arrow"></span>
+				</footer>
+				<section id="slide1" class="slide slide-1">
+					<h3 class="slide-1__title">
+						Всегда ли цели терапии СД2 на поверхности?
+					</h3>
+					<div class="pulse__point-1">
+						<p class="pulse__point-1__text">Цель по HbA1c</p>
+						<span class="pulse pulse--first"></span>
+						<span class="pulse pulse--second"></span>
+					</div>
+					<div class="pulse__point-2">
+						<p class="pulse__point-2__text">Гипогликемия</p>
+						<span class="pulse pulse--first"></span>
+						<span class="pulse pulse--second"></span>
+					</div>
+					<div class="pulse__point-3">
+						<p class="pulse__point-3__text">Осложнения СД</p>
+						<span class="pulse pulse--first"></span>
+						<span class="pulse pulse--second"></span>
+					</div>
+					<div class="pulse__point-4">
+						<p class="pulse__point-4__text">СС риски</p>
+						<span class="pulse pulse--first"></span>
+						<span class="pulse pulse--second"></span>
+					</div>
+				</section>
+				<section id="slide2" class="slide slide-2">
+					<h3 class="slide-2__title">
+						Основа терапии &#8212; патогенез СД2
+					</h3>
+        </section>
+        <!-- HORIZONTAL SLIDER -->
+				<div class="slide__horizontal">
+					<section id="slide3_1" class="slide slide-3-1">
+						<img src="./img/slide-3-1.jpg" alt="Slide 3-1" />
+					</section>
+					<section id="slide3_2" class="slide slide-3-2">
+						<img src="./img/slide-3-2.jpg" alt="Slide 3-2" />
+					</section>
+					<section id="slide3_3" class="slide slide-3-3">
+						<img src="./img/slide-3-3.jpg" alt="Slide 3-3" />
+					</section>
+				</div>
+        <!-- TOGGLE NAVIGATION -->
+				<div class="toggle">
+					<span class="toggle__scale"></span>
+					<span class="toggle__scale--active"></span>
+					<span class="toggle__icon"
+						><svg
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 870 1110"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							<g fill="#fff" fill-opacity=".4" stroke="none">
+								<path
+									d="M122 916 l-91 -194 -16 -247 c-8 -135 -15 -261 -15 -278 0 -32 2 -33 183 -115 100 -45 187 -82 194 -82 7 0 119 79 250 175 l239 175 -11 132 -11 133 -124 150 -123 150 -189 98 c-104 53 -190 97 -192 97 -2 0 -44 -87 -94 -194z"
+								/>
+							</g>
+							<g fill="#d1eaff" stroke="none">
+								<path
+									d="M204 861 c-31 -64 -62 -132 -69 -151 -12 -30 -35 -327 -35 -443 l0 -38 103 -48 c184 -85 136 -95 364 73 l199 145 -8 87 c-4 48 -13 94 -21 103 -8 9 -57 69 -110 133 l-97 117 -135 69 -136 69 -55 -116z"
+								/>
+							</g></svg
+					></span>
+					<div class="years">
+						<p>1998</p>
+						<p>2009</p>
+						<p>2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

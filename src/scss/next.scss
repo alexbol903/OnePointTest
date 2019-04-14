@@ -1,0 +1,44 @@
+.next {
+  position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 500;
+  user-select: none;
+  transition: opacity .2s;
+  
+	.next__text {
+    text-align: center;
+		font-size: 17px;
+		color: #fff;
+		margin-bottom: -5px;
+	}
+  
+	.next__arrow {
+    position: relative;
+		display: block;
+		min-width: 30px;
+		min-height: 30px;
+		transform: rotate(-45deg);
+		border-left: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+		z-index: 200;
+	}
+  
+	&::after {
+    content: '';
+		position: relative;
+		border-radius: 100%;
+		min-width: 95vh;
+		min-height: 180px;
+		background-color: #f78b21;
+		box-shadow: 0 -20px 20px #f78b1f;
+		opacity: 0.9;
+		top: 10px;
+	}
+}

@@ -1,0 +1,157 @@
+.slide__horizontal {
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: left .5s;
+}
+
+.slide__vertical {
+	position: relative;
+  width: 100vw;
+  min-height: 100%;
+	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+	justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  
+  transition: top .5s;
+}
+
+.slide {
+	min-width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.slide-1 {
+  background-image: url('../img/slide-1.jpg');
+  background-repeat: no-repeat;
+	color: #0d319c;
+  
+	&__title {
+    width: 700px;
+		font-size: 50px;
+		font-weight: normal;
+		margin-left: 68px;
+		margin-top: 118px;
+	}
+  
+	// Pulse point
+	.pulse__point-1 {
+    width: 40px;
+		min-height: 40px;
+		height: 40px;
+		top: 270px;
+		left: 569px;
+    
+		&__text {
+      width: 120px;
+			top: 6px;
+			left: 47px;
+		}
+	}
+  
+	.pulse__point-2 {
+    width: 30px;
+		min-height: 30px;
+		height: 30px;
+		top: 427px;
+		left: 273px;
+    
+		&__text {
+      top: -29px;
+			left: -43px;
+		}
+	}
+  
+	.pulse__point-3 {
+    width: 20px;
+		min-height: 20px;
+		height: 20px;
+		top: 535px;
+		left: 478px;
+    
+		&__text {
+      width: 130px;
+			top: -29px;
+			left: -90px;
+		}
+	}
+  
+	.pulse__point-4 {
+    width: 20px;
+		min-height: 20px;
+		height: 20px;
+		top: 514px;
+		left: 820px;
+    
+		&__text {
+      width: 80px;
+			top: -29px;
+			left: -25px;
+		}
+	}
+  
+	.pulse__point-1,
+	.pulse__point-2,
+	.pulse__point-3,
+	.pulse__point-4 {
+    position: absolute;
+    
+		border: 2px solid #c85e53;
+		border-radius: 100%;
+		.pulse {
+      position: absolute;
+      
+			display: block;
+			width: 100%;
+			min-height: 100%;
+			height: 100%;
+			border-radius: 100%;
+			background-color: #e03724;
+			opacity: 0;
+      
+			animation: pulse 2s linear infinite;
+		}
+    
+		&__text {
+      position: absolute;
+		}
+    
+		.pulse--first {
+      animation-delay: 0s;
+		}
+		.pulse--second {
+      animation-delay: 1s;
+		}
+	}
+}
+
+
+.slide-2 {
+  background-image: url('../img/slide-2.jpg');
+  background-repeat: no-repeat;
+	color: #fff;
+  
+  
+	&__title {
+    width: 500px;
+		font-size: 50px;
+		font-weight: normal;
+		margin: 0 auto;
+		margin-top: 230px;
+		text-align: center;
+	}
+}
