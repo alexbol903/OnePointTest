@@ -158,10 +158,11 @@ const setTransition = element => {
 }
 
 const init = () => {
-  options.container.ontouchstart = touchStartVer;
   options.horizontalSlide.style.left = `-${options.screenWidth * 2}px`;
   options.widthScale.style.width = `${options.widthToggle}px`;
   options.toggleIcon.style.left = `${options.widthToggle}px`;
 }
+
+options.container.ontouchstart = touchStartVer;
 
 init();
